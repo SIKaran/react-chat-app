@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.contact-model{
+  .list-group.bg-dark{
+    li{
+      background-color: $brandColor;
+      color: invert($color: $brandColor);
+      border-color: transparentize($color: invert($color: $brandColor), $amount: 0.75);
+    }
+  }
+}

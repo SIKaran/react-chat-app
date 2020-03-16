@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.chat-details.mobile{
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: $brandColor;
+  z-index: 1100;
+}
+.chat-details.mobile.active{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
